@@ -1,121 +1,125 @@
-import { EllipsisVertical } from "lucide-react"
-import { Badge, Button, Checkbox, Mask, Table } from "react-daisyui"
+import { Apple, Badge, Carrot, Drumstick, EllipsisVertical, GlassWater, Store,   } from "lucide-react"
+import { Table, Theme } from 'react-daisyui';
+import { Button, Checkbox, Mask } from "react-daisyui"
+
+
+
 
 function App() {
 
   return (
+
     <>
 
-<div className="overflow-x-auto">
-      <Table {...arguments} className="rounded-box">
-        
 
-        <Table.Body>
+
+<div className="flex justify-items-center">
+      <Table size="md" className="w-15" >
+
+        <Table.Body >
           <Table.Row>
             <Checkbox />
-            <div className="flex items-center space-x-3 truncate">
+           
               
               <div>
-                <div className="font-bold">Hart Hagerty</div>
-                <div className="text-sm opacity-50">United States</div>
-              </div>
+                <div className="font-bold">Maça</div>
+                <div className="text-sm opacity-50">2 unidades</div>
+              
             </div>
-            <div>
-              Zemlak, Daniel and Leannon
-              <br />
-              <Badge color="ghost" size="sm">
-                Desktop Support Technician
-              </Badge>
-            </div>
-            <div>Purple</div>
-            <Button color="ghost" size="xs">
-              details
-            </Button>
+            
+            <div></div>
 
+            <div className="flex justify-center">
+            <Button color="secondary" size="xs">
+            <Apple />
+              fruta
+            </Button>
             <EllipsisVertical />
-
-          </Table.Row>
-
-
-
-
-          <Table.Row>
-            <Checkbox />
-            <div className="flex items-center space-x-3 truncate">
-              <Mask variant="squircle" src="http://daisyui.com/tailwind-css-component-profile-3@56w.png" />
-              <div>
-                <div className="font-bold">Brice Swyre</div>
-                <div className="text-sm opacity-50">China</div>
-              </div>
             </div>
-            <div>
-              Carrol Group
-              <br />
-              <Badge color="ghost" size="sm">
-                Tax Accountant
-              </Badge>
-            </div>
-            <div>Red</div>
-            <Button color="ghost" size="xs">
-              details
-            </Button>
           </Table.Row>
 
           <Table.Row>
             <Checkbox />
-            <div className="flex items-center space-x-3 truncate">
-              <Mask variant="squircle" src="http://daisyui.com/tailwind-css-component-profile-4@56w.png" />
+            
               <div>
-                <div className="font-bold">Marjy Ferencz</div>
-                <div className="text-sm opacity-50">Russia</div>
+                <div className="font-bold">Pão Frances</div>
+                <div className="text-sm opacity-50">4 unidades</div>
               </div>
-            </div>
-            <div>
-              Rowe-Schoen
-              <br />
-              <Badge color="ghost" size="sm">
-                Office Assistant I
-              </Badge>
-            </div>
-            <div>Crimson</div>
+            
+              <div></div>
+           
+              <div className="flex justify-center">
             <Button color="ghost" size="xs">
-              details
+            <Store />
+              padaria
             </Button>
+            <EllipsisVertical />
+            </div>
           </Table.Row>
 
           <Table.Row>
             <Checkbox />
-            <div className="flex items-center space-x-3 truncate">
-              <Mask variant="squircle" src="http://daisyui.com/tailwind-css-component-profile-5@56w.png" />
+           
               <div>
-                <div className="font-bold">Yancy Tear</div>
-                <div className="text-sm opacity-50">Brazil</div>
+                <div className="font-bold">Brócolis</div>
+                <div className="text-sm opacity-50">1 unidade</div>
               </div>
-            </div>
-            <div>
-              Wyman-Ledner
-              <br />
-              <Badge color="ghost" size="sm">
-                Community Outreach Specialist
-              </Badge>
-            </div>
-            <div>Indigo</div>
+            
+            
+            <div></div>
+            <div className="flex justify-center">
             <Button color="ghost" size="xs">
-              details
+            <Carrot />
+              legume
             </Button>
+            <EllipsisVertical />
+            </div>
+          </Table.Row>
+
+          <Table.Row>
+            <Checkbox />
+            
+              <div>
+                <div className="font-bold">Leite</div>
+                <div className="text-sm opacity-50">2 litros</div>
+              </div>
+            
+           
+            <div></div>
+            <div className="flex justify-center">
+            <Button color="ghost" size="xs">
+            <GlassWater />
+              bebida
+            </Button>
+            <EllipsisVertical />
+            </div>
+          </Table.Row>
+
+          <Table.Row>
+            <Checkbox />
+            
+              <div>
+                <div className="font-bold">Peito de Frango</div>
+                <div className="text-sm opacity-50">2KG</div>
+              </div>
+            
+           
+            <div></div>
+            <div className="flex justify-center">
+            <Button color="primary" size="xs">
+            <Drumstick />
+              carne
+            </Button>
+            <EllipsisVertical />
+            </div>
           </Table.Row>
         </Table.Body>
 
-        <Table.Footer>
-          <span>&nbsp;</span>
-          <span>Name</span>
-          <span>Job</span>
-          <span>Favorite Color</span>
-          <span>&nbsp;</span>
-        </Table.Footer>
+        
       </Table>
     </div>
-    
+
+
     </>
   )
 }
