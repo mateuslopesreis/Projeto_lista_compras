@@ -3,6 +3,15 @@ module.exports = {
 
   themes: [
     {
+      extend: {
+        backgroundImage: {
+          'hero-pattern': "url('/componentes/fundo.png')",
+          'footer-texture': "url('/componentes/fundo.png')",
+        }
+      },
+
+
+
       mytheme: {
       
 "primary": "#6d28d9",
@@ -24,16 +33,28 @@ module.exports = {
 "error": "#ff0000",
       },
     },
+
+    
+
   ],
+
+  
+    
+
+
   content: [
     'node_modules/daisyui/dist/**/*.js',
     'node_modules/react-daisyui/dist/**/*.js',
   ],
 
+
+
   daisyui: {
     themes: ["light", "dark"],
   },
   plugins: [require('daisyui')],
+
+
 }
  
 
